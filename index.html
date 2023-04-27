@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" rel="styles.css">
+</head>
+<body>
+    <header class="contact-form-header">
+        <h1>Get in touch.</h1>
+        <p>Darley serves a range of customers and partnerships across several industries. Help us direct you to the right person so we can get you the information you need by answering a few questions.</p>
+    </header>
+
+    <form action='' method="post" class="contact-form">
+        <div class="form-row"> 
+            <label for="first-name">First Name</label>
+            <input id="first-name" name="first-name" type="text"/>
+        </div>
+
+        <div class="form-row">
+            <label for="last-name">Last Name</label>
+            <input id="last-name" name="last-name" type="text"/>
+        </div> 
+
+        <div class="form-row">
+            <label for="title-rank">Title or Rank</label>
+            <input id="title-rank" name="title-rank" type="text">
+        </div>
+
+        <div class="form-row">
+            <label for="email">email</label>
+            <input id="email" name="email" type="email">
+        </div>
+
+        <div class="form-row">
+            <label for="phone">phone</label>
+            <input id="phone" name="phone" type="tel">
+        </div>
+
+        <fieldset class="form-row">
+            <legend>Location</legend>
+
+            <label for="location-1" class="radio-label">US/Domestic</label>
+            <input id="location-1" name ="location" type="radio" value="domestic">
+
+            <label for="location-2" class="radio-label">International</label>
+            <input id="location-2" name="location" type="radio" value="international">
+        </fieldset>
+
+        <div class="form-row">
+            <label for="industry">Industry</label>
+            <select id="industry" name="industry">
+                <optgroup label="Military">
+                    <option value="army">Army</option>
+                    <option value="navy">Navy</option>
+                    <option value="usaf">USAF</option>
+                    <option value="uscg">USCG</option>
+                    <option value="usmc">USMC</option>
+                </optgroup>
+                <optgroup label="First Responders">
+                    <option value="law-enforcement">Law Enformcement</option>
+                    <option value="fire-department">Fire Department</option>
+                    <option value="ems">EMS/Ambulance</option>
+                </optgroup>
+                <optgroup label="Governmental">
+                    <option value="municipality">Municipality</option>
+                    <option value="federal">Federal Agency</option>
+                </optgroup>
+                <option value="school">Schools</option>
+                <option value="oem">OEM</option>
+                <option value="other">other</option>
+            </select>
+        </div>
+
+        <fieldset class="form-row">
+            <legend>Relationship to Darley</legend>
+            <input type="radio" id="relationship-1" name="relationship" value="existing-customer">
+            <label for="relationship-1">Existing Customer</label>
+            <input type="radio" id="relationship-2" name="relationship" value="potential-customer">
+            <label for="relationship-2">Potential Partner</label>
+            <input type="radio" id="relationship-3" name="relationship" value="potential-partner">
+            <label for="relationship-3">Potential Partner</label>
+        </fieldset>
+
+        <div class="form-row">
+            <label for="description">What can we help you with?</label>
+            <textarea id="description" name="description"></textarea>
+        </div>
+
+        <div class="form-row">
+            <label class="checkbox-label" for="marketing-opt-in">Subscribe to Darley marketing emails</label>
+            <input id="marketing-opt-in" name="marketing-opt-in" type="checkbox" value="opt-in"/>
+        </div>
+
+        <div class="form-row">
+            <button>Submit</button>
+        </div>
+    </form>
+
+</body>
+</html>
